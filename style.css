@@ -226,7 +226,6 @@ h1 span {
 
 .screen img {
   width: 100%;
-  aspect-ratio: 9 / 19.5;
   object-fit: contain;
 }
 
