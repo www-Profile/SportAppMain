@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8fafc">
+  <meta
+    name="description"
+    content="SportApp — приложение для тренировок, анализа результатов и соревнований с друзьями."
+  >
+
+  <title>Добро пожаловать в SportApp</title>
+  <link rel="icon" href="assets/icon.png">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  >
+  <link rel="stylesheet" href="style.css">
+  <script src="player.js" defer></script>
+</head>
+
+<body>
+  <main class="page">
+    <!-- 1. Приветствие -->
+    <section class="hero" aria-labelledby="welcome-title">
+      <div class="hero-art" aria-hidden="true"></div>
+
+      <h1 id="welcome-title">
+        Добро пожаловать<br>в <span>SportApp</span>
+      </h1>
+
+      <p class="hero-description">
+        Приложение, где можно составить свою тренировку,
+        заниматься вместе с другом и видеть, как меняются результаты.
+      </p>
+
+      <a class="button" href="https://www-profile.github.io/SportApp/">
+        Открыть SportApp
+      </a>
+    </section>
+
+    <!-- 2. Видео -->
+    <section class="section" aria-labelledby="video-title">
+      <h2 id="video-title">Посмотри, что тебя ждёт внутри</h2>
+
+      <figure class="film">
+        <video
+          id="intro-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          controls
+          preload="metadata"
+          poster="assets/poster-wide.webp"
+          aria-label="Как два друга проходят совместную тренировку в SportApp"
+        >
+          <source
+            media="(max-width: 600px)"
+            src="assets/film-wide.mp4"
+            type="video/mp4"
+          >
+          <source src="assets/film-wide.mp4" type="video/mp4">
+          <a href="assets/film-wide.mp4">Посмотреть видео о SportApp</a>
+        </video>
+
+        <figcaption>
+          Одна тренировка на двух телефонах - от приглашения до результата.
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- 3. Знакомство -->
+    <section class="section introduction" aria-labelledby="about-title">
+      <h2 id="about-title">Больше, чем просто тренировки.</h2>
+      <p>
+        Можно выбрать готовую программу и позаниматься самому.
+        Собрать свои упражнения или позвать друга
+        на совместную тренировку. Результаты, соревнования и лента
+        спортсменов собраны в одном приложении.
+      </p>
+    </section>
+
+    <!-- 4. Возможности -->
+    <section class="section" aria-labelledby="features-title">
+      <h2 id="features-title">Возможности SportApp</h2>
+
+      <ul class="feature-grid">
+        <li class="feature">
+          <i class="feature-icon fa-solid fa-chart-line" aria-hidden="true"></i>
+          <h3>Анализ<br>результатов</h3>
+          <p>Сравнивай свои показатели с прошлыми тренировками.</p>
+        </li>
+
+        <li class="feature">
+          <i class="feature-icon fa-solid fa-dumbbell" aria-hidden="true"></i>
+          <h3>Создание<br>тренировок</h3>
+          <p>Собирай упражнения в тренировку под свою цель.</p>
+        </li>
+
+        <li class="feature">
+          <i class="feature-icon fa-solid fa-trophy" aria-hidden="true"></i>
+          <h3>Соревнования<br>с друзьями</h3>
+          <p>Бросай друзьям вызов и сравнивайте результаты.</p>
+        </li>
+
+        <li class="feature">
+          <i class="feature-icon fa-solid fa-earth-americas" aria-hidden="true"></i>
+          <h3>Мировой<br>рейтинг</h3>
+          <p>Узнай своё место среди других спортсменов SportApp.</p>
+        </li>
+
+        <li class="feature">
+          <i class="feature-icon fa-solid fa-clipboard-list" aria-hidden="true"></i>
+          <h3>Программы<br>тренировок</h3>
+          <p>Выбирай готовый план и занимайся по нему.</p>
+        </li>
+
+        <li class="feature">
+          <i class="feature-icon fa-solid fa-newspaper" aria-hidden="true"></i>
+          <h3>Лента<br>пользователей</h3>
+          <p>Делись достижениями и следи за успехами других.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 5. Настоящие экраны приложения -->
+    <section class="section" aria-labelledby="screens-title">
+      <h2 id="screens-title">SportApp изнутри</h2>
+
+<div class="screens">
+  <figure class="screen">
+    <a href="assets/screen-stats.png" aria-label="Увеличить экран статистики">
+      <img
+        src="assets/screen-stats.png"
+        alt="Статистика тренировок в SportApp"
+        loading="lazy"
+      >
+    </a>
+  </figure>
+
+  <figure class="screen">
+    <a href="assets/screen-workouts.png" aria-label="Увеличить экран тренировок">
+      <img
+        src="assets/screen-workouts.png"
+        alt="Раздел тренировок SportApp"
+        loading="lazy"
+      >
+    </a>
+  </figure>
+
+  <figure class="screen">
+    <a href="assets/screen-profile.png" aria-label="Увеличить экран профиля">
+      <img
+        src="assets/screen-profile.png"
+        alt="Профиль пользователя в SportApp"
+        loading="lazy"
+      >
+    </a>
+  </figure>
+</div>
+    </section>
+
+    <!-- 6. Совместные тренировки -->
+    <section class="section together" aria-labelledby="together-title">
+      <i class="section-icon fa-solid fa-user-group" aria-hidden="true"></i>
+      <h2 id="together-title">Становитесь сильнее вместе.</h2>
+      <p>
+        Открой тренировку, нажми «Совместная» и пригласи друга.
+        Каждый проходит упражнения на своём телефоне, а на финише
+        вы видите результаты друг друга. Можно заниматься вместе,
+        даже когда вы в разных местах.
+      </p>
+    </section>
+
+    <!-- 7. Прогресс -->
+    <section class="story" aria-labelledby="progress-title">
+      <i class="story-icon fa-solid fa-chart-column" aria-hidden="true"></i>
+      <div>
+        <h2 id="progress-title">Каждая тренировка приближает тебя к цели.</h2>
+        <p>
+          После занятия загляни в статистику. Сравни сегодняшний
+          результат с предыдущим и реши, на чём хочешь сосредоточиться
+          в следующий раз.
+        </p>
+      </div>
+    </section>
+
+    <!-- 8. Сообщество -->
+    <section class="story" aria-labelledby="community-title">
+      <i class="story-icon fa-solid fa-comments" aria-hidden="true"></i>
+      <div>
+        <h2 id="community-title">Ты не один на пути к результату.</h2>
+        <p>
+          Поделись достижением в ленте, посмотри, как тренируются другие,
+          или предложи другу соревнование. Так у следующей тренировки
+          появится общий повод.
+        </p>
+      </div>
+    </section>
+
+    <!-- 9. Финал -->
+    <footer class="final">
+      <div class="final-brand">
+        <img src="assets/icon.png" width="34" height="34" alt="">
+        <span>SportApp</span>
+      </div>
+
+      <h2>Твоя следующая версия начинается здесь.</h2>
+      <p>Выбери первую тренировку и начни в своём темпе.</p>
+
+      <a class="button" href="https://www-profile.github.io/SportApp/">
+        Открыть SportApp
+      </a>
+    </footer>
+  </main>
+</body>
+</html>
